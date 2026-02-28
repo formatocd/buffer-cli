@@ -22,11 +22,34 @@ A simple command-line interface tool written in Rust to interact with the [Buffe
 ## Usage
 
 1. Clone the repository and navigate to the project directory.
-2. Build or run the project using Cargo:
-
+```bash
+git clone https://github.com/formatocd/buffer_cli.git
+cd buffer_cli
+```
+2. Run the project locally using Cargo:
 ```bash
 cargo run
 ```
 
 3. When prompted, enter your Buffer API string/token.
 4. Follow the on-screen instructions to select an organization and view its connected channels.
+
+## Compilation
+
+To build an optimized release version of the application, use the following commands based on your operating system:
+
+**Windows & macOS:**
+```bash
+cargo build --release
+```
+
+**Linux:**
+```bash
+cargo build --release --target x86_64-unknown-linux-musl
+```
+
+The compiled binary will be available in the `target/release/` or `target/x86_64-unknown-linux-musl/release/` directory.
+
+## Download
+
+You can also download the pre-compiled binaries from the [Releases](https://github.com/formatocd/buffer-cli/releases) section of this repository.
