@@ -21,34 +21,31 @@ A simple command-line interface tool written in Rust to interact with the [Buffe
 
 ## Usage
 
-1. Clone the repository and navigate to the project directory.
+1. Run the project. This can be done in two ways.
+   - a. [Clone](#clone-repository) the project with git and [compile](#compilation) it, or [download](#download) the binary and run it.
+   - b. [Clone](#clone-repository) the project and run the `cargo run` command in the root of the project.
+2. When prompted, enter your Buffer API string/token.
+3. Follow the on-screen instructions to select an organization and view its connected channels.
+
+## Clone repository
+
+**⚠️ Warning:** You must have [Git](https://git-scm.com/install/) installed on your system.
+
 ```bash
 git clone https://github.com/formatocd/buffer_cli.git
-cd buffer_cli
 ```
-2. Run the project locally using Cargo:
-```bash
-cargo run
-```
-
-3. When prompted, enter your Buffer API string/token.
-4. Follow the on-screen instructions to select an organization and view its connected channels.
 
 ## Compilation
 
-To build an optimized release version of the application, use the following commands based on your operating system:
+**⚠️ Warning:** You must have [Rust](https://rust-lang.org/tools/install/) installed on your system.
 
-**Windows & macOS:**
+To build an optimized release version of the application, run the following command:
+
 ```bash
 cargo build --release
 ```
 
-**Linux:**
-```bash
-cargo build --release --target x86_64-unknown-linux-musl
-```
-
-The compiled binary will be available in the `target/release/` or `target/x86_64-unknown-linux-musl/release/` directory.
+The compiled binary will be available in the `target/release/` directory.
 
 ## Download
 
