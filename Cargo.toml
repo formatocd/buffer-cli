@@ -1,6 +1,10 @@
 [package]
 name = "buffer_cli"
-version = "0.1.0"
+description = "A simple command-line interface tool to interact with the Buffer GraphQL API."
+authors = ["Carlos Durán <formatocd@proton.me>"]
+license = "MIT"
+repository = "https://github.com/formatocd/buffer_cli"
+version = "1.0.1"
 edition = "2024"
 
 [dependencies]
